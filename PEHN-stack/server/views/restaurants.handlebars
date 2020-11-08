@@ -1,0 +1,21 @@
+<h1>Restaurants List </h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Price Range</th>
+
+    </tr>
+
+{{#each data.restaurants}}
+    <tr>
+        <td>{{this.id}}</td>
+        <td>{{this.name}}</td>
+        <td>{{this.location}}</td>
+        <td>{{this.price_range}}</td>
+    </tr>
+{{/each}}
+
+</table>
